@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia en HTML</title>
+    <!-- Estilos opcionales para una presentación más cercana a la imagen (no requeridos) -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            margin-top: 30px;
+            color: #555;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        audio, video {
+            display: block;
+            margin: 10px 0;
+            width: 100%;
+            max-width: 500px;
+        }
+        iframe {
+            margin-top: 10px;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Multimedia en HTML</h1>
+
+    <!-- Sección de Audio -->
+    <h2>Audio</h2>
+    <audio controls>
+        <!-- Reemplaza "audio.mp3" con la ruta real de tu archivo de audio -->
+        <source src="audio.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- Sección de Video -->
+    <h2>Video</h2>
+    <video controls width="500">
+        <!-- Reemplaza "video.mp4" con la ruta real de tu archivo de video -->
+        <source src="video.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+
+    <!-- Sección de Iframe (video de YouTube desde el canal programadorX.com) -->
+    <h2>Iframe</h2>
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/VIDEO_ID"   <!-- Cambia VIDEO_ID por el ID del video de programadorX.com -->
+        title="Video de programadorX.com" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+    <p style="font-size: 0.9em; color: #666;">
+        * Reemplaza <code>VIDEO_ID</code> con el identificador del video que quieras mostrar del canal <strong>programadorX.com</strong>.
+    </p>
+
+</body>
+</html>
