@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de imágenes</title>
+    <style>
+        /* Estilos para la galería */
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 0;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        li {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 10px;
+            transition: transform 0.2s;
+        }
+        li:hover {
+            transform: scale(1.03);
+        }
+        li a {
+            display: block;
+            text-decoration: none;
+        }
+        li img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;   /* recorta la imagen para que todas tengan el mismo tamaño */
+            border-radius: 8px;
+            display: block;
+        }
+        .nombre {
+            text-align: center;
+            margin-top: 8px;
+            color: #555;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌄 Mi Galería</h1>
+    <ul>
+        <li>
+            <a href="imagen1.html">
+                <img src="imagenes/imagen1.jpg" alt="Paisaje montañoso">
+                <div class="nombre">Imagen 1</div>
+            </a>
+        </li>
+        <li>
+            <a href="imagen2.html">
+                <img src="imagenes/imagen2.jpg" alt="Atardecer en la playa">
+                <div class="nombre">Imagen 2</div>
+            </a>
+        </li>
+        <li>
+            <a href="imagen3.html">
+                <img src="imagenes/imagen3.jpg" alt="Bosque verde">
+                <div class="nombre">Imagen 3</div>
+            </a>
+        </li>
+        <!-- Puedes agregar más imágenes aquí -->
+    </ul>
+</body>
+</html>
